@@ -13,7 +13,7 @@ function Countries({ input, isLoading, filteredData, countries }) {
             const { name, flags, population, region, capital } = c;
 
             return (
-              <Link href={'/SoloCountries/' + name.common}>
+              <Link href={'/SoloCountries/' + name.common} key={name.common}>
                 <article id="country" className="px-5 grid " key={index}>
                   <div className="bg-white dark:bg-light-grey dark:text-white shadow-2xl my-20   font-thin rounded">
                     <img
@@ -46,7 +46,7 @@ function Countries({ input, isLoading, filteredData, countries }) {
             const { name, flags, population, region, capital } = c;
 
             return (
-              <Link href={'/SoloCountries/' + name.common}>
+              <Link href={'/SoloCountries/' + name.common} key={name.common}>
                 <article id="country" className="px-8 " key={index}>
                   <div className=" flex flex-col flex-1 bg-white dark:bg-light-grey dark:text-white shadow-2xl my-20   font-thin rounded">
                     <div className="flex justify-center  ">
