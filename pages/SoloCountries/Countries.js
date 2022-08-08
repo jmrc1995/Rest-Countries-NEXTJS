@@ -7,7 +7,7 @@ function Countries({ input, isLoading, filteredData, countries }) {
     <>
       {isLoading ? (
         <h1>Loading...</h1>
-      ) : input.length > 1 ? (
+      ) : input?.length > 1 ? (
         <section className=" grid grid-cols-1 auto-cols-auto sm:grid-cols-2 lg:grid-cols-4 xl:grid-cols-5">
           {filteredData.map((c, index) => {
             const { name, flags, population, region, capital } = c;
