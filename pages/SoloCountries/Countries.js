@@ -42,7 +42,7 @@ function Countries({ input, isLoading, filteredData, countries }) {
         </section>
       ) : (
         <section className=" grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 xl:grid-cols-5">
-          {countries.map((c, index) => {
+          {countries?.map((c, index) => {
             const { name, flags, population, region, capital } = c;
 
             return (
