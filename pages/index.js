@@ -89,10 +89,10 @@ function Home() {
   }, []);
 
   return (
-    <>
+    <div className="dark:bg-light-grey">
     <Header />
       <section className="mx-8 flex flex-col md:flex md:flex-row md:w-full md:mx-0 mx-0 text-white">
-        <form className="md:mx-8 md:w-6/12 shadow-xl bg-white dark:bg-light-grey dark:text-white flex items-center w-full b p-5 rounded mt-5">
+        <form className="md:mx-8 md:w-6/12 shadow-xl bg-white dark:bg-light-grey dark:text-white flex items-center p-5 rounded m-8">
           <AiOutlineSearch className="dark:text-white text-black" />
           <input
             type="search"
@@ -103,13 +103,13 @@ function Home() {
             placeholder="Search for country ..."
           />
         </form>
-        <div className="md:mx-8 md:w-6/12 text-black flex items-center md:justify-end itemsstart rounded mt-5">
+        <div className="md:mx-8 md:w-6/12 text-black flex items-center md:justify-end itemsstart rounded ">
           <select
             name="select"
             id="select"
             value={regions.name}
             onChange={(e) => filterRegions(e.target.value)}
-            className="p-8 shadow-xl bg-white dark:bg-light-grey dark:text-white  b p-5 rounded "
+            className="m-8 md:m-0 shadow-xl bg-white dark:bg-light-grey dark:text-white flex items-center p-7 rounded "
           >
             <option value="Africa">Africa</option>
             <option value="America">America</option>
@@ -125,7 +125,7 @@ function Home() {
         countries={country}
         filteredData={filteredData}
       />
-    </>
+    </div >
   );
 }
 

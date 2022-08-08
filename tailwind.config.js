@@ -22,8 +22,6 @@ module.exports = {
       colors: {
         "light-grey": "#2B3844",
         "dark-grey": "#202C36",
-        white: "#FFFFFF",
-        black: "#000000",
         "dark-blue": "#2b3238", //dark-mode-elements
         "very-dark-blue": "#20262b", //dark-mode-background
         "very-dark-blue-text": "#111314", //light-mode-text
