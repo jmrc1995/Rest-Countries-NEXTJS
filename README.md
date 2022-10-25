@@ -9,7 +9,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: https://github.com/jmrc1995/Rest-Countries-NEXTJS
-- Live Site URL: [https://jmrc1995.github.io/goodsoup/](https://rest-countries-nextjs-zeta.vercel.app)
+- Live Site URL:https://rest-countries-nextjs-4wdwuxdc0-jmrc1995.vercel.app
 
 ## My process
 
